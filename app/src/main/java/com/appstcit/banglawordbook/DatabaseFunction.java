@@ -76,6 +76,28 @@ public class DatabaseFunction extends SQLiteOpenHelper {
 
         return english;
     }
+    public String[] viewDataBangla (){
+
+        SQLiteDatabase sq =this.getReadableDatabase();
+        String q="SELECT * FROM "+TABLE_NAME;
+        Cursor c= sq.rawQuery(q,null);
+        String[] bangla = new String[c.getCount()];
+
+        c.moveToFirst();
+
+        if(c.moveToFirst()){
+            int count = 0;
+            do{
+                bangla[count] = c.getString(c.getColumnIndex(col_NAME+""));
+
+
+                count=count+1;
+            }while (c.moveToNext());
+
+        }
+
+        return bangla;
+    }
 
     public void Delete_Raw(String name)
     {
