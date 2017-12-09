@@ -88,7 +88,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
         if(c.moveToFirst()){
             int count = 0;
             do{
-                bangla[count] = c.getString(c.getColumnIndex(col_NAME+""));
+                bangla[count] = c.getString(c.getColumnIndex(col_Phone+""));
 
 
                 count=count+1;
