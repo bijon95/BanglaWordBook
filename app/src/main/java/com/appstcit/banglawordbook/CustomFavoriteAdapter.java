@@ -87,6 +87,8 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
 
                 DatabaseFunction df = new DatabaseFunction(getContext());
                 df.Delete_Raw(product.getBangla());
+                df.viewData();
+                Toast.makeText(getContext(),product.getBangla()+"\nDeleted",Toast.LENGTH_SHORT).show();
 
             }
         });
