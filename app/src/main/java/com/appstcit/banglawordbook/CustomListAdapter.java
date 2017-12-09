@@ -70,7 +70,7 @@ private TextToSpeech textoSpeech;
             public void onClick(View v) {
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, english[position]);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, english[position]+"-"+bangla[position]);
                 sendIntent.setType("text/plain");
                 context.startActivity(sendIntent);
             }
