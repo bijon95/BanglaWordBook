@@ -42,9 +42,9 @@ public class Favorite extends AppCompatActivity {
                 temp.clear();
                 for (int i = 0; i < arrayList.size(); i++)
                 {
-                    if (textlength <= arrayList.get(i).getEnglish().length()) {
+                    if (textlength <= arrayList.get(i).getBangla().length()) {
 
-                        if (editText.getText().toString().equalsIgnoreCase((String) arrayList.get(i).getEnglish().subSequence(0,textlength))) {
+                        if (editText.getText().toString().equalsIgnoreCase((String) arrayList.get(i).getBangla().subSequence(0,textlength))) {
                             temp.add(arrayList.get(i));
                         }
                     }
