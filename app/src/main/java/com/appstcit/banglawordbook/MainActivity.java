@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     String[] bangla={"প্রবেশাধিকার","উত্তর,জবাব","মানচিত্রাবলী","ঘণ্টাধ্বনি","কাঠের বা পাথরের তৈরি লম্বা আসন,বিচারকের আসন","বিদ্যালয়ে লিপির জন্য তক্তা","বই","কেদারা,সভাপতির পদ","আচার্য","কলেজ,মহাবিদ্যালয়","সক্রিয় অংশগ্রহণকারী,প্রদর্শনকারী","পরীক্ষা,অনুসন্ধান","অনুশীলনের বই","পারিশ্রমিক","জরিমানা","ঝর্ণা কলম","পৃথিবী","ব্যায়ামাগার","ছাত্রাবাস","বিদ্যালয়ের প্রধানশিক্ষক","ছাত্রাবাস","কালি","ত্যাগ","পাঠ","গ্রন্থাগার","মানচিত্র","পদক","কলমের নিব","কাগজ","লেখনী","পেন্সিল","খেলার মাঠ","কবিতা","কবিতা","অধ্যক্ষ","পুরস্কার","অধ্যাপক","গদ্য","চক্ষুর তারা","প্রশ্ন","ছুটি","ফল","বিদ্যালয়","সিলিট্-পাথর","শিক্ষার্থী","বিষয়","ডেস্ক,সারণী","হস্তান্তর","শিক্ষাদান","গৃহশিক্ষক","বিশ্ববিদ্যালয়","অবকাশ","উপাচার্য"};
 
     LinearLayout btn1;
+    String[] datalist = new String[1000];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +33,18 @@ public class MainActivity extends AppCompatActivity
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,Main2Activity.class);
-                i.putExtra("english",english);
-                i.putExtra("bangla",bangla);
-                startActivity(i);
+
+                DatabaseFunction df = new DatabaseFunction(MainActivity.this);
+                datalist=df.viewData();
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                intent.putExtra("english",english);
+                intent.putExtra("bangla",bangla);
+                startActivity(intent);
+
+                for(int i = 0; i<english.length;i++){
+
+
+                }
             }
         });
 
