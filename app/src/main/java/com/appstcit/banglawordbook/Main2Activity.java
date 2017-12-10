@@ -18,7 +18,8 @@ public class Main2Activity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listview);
         String[] english = getIntent().getStringArrayExtra("english");
         String[] bangla = getIntent().getStringArrayExtra("bangla");
-        CustomListAdapter adapter = new CustomListAdapter(Main2Activity.this,english,bangla);
+        String[] viewStd = getIntent().getStringArrayExtra("viewStd");
+        CustomListAdapter adapter = new CustomListAdapter(Main2Activity.this,english,bangla,viewStd);
         listView.setAdapter(adapter);
 
     }

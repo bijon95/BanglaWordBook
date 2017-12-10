@@ -25,13 +25,15 @@ private TextToSpeech textoSpeech;
     private Activity context;
     private String[] english;
     private String[] bangla;
+    private String[] viewSts;
 
     int resource;
-    public CustomListAdapter(Activity context, String[] english,String[] bangla) {
+    public CustomListAdapter(Activity context, String[] english,String[] bangla, String[] viewStd) {
         super(context, R.layout.list_item, english);
         this.context = context;
         this.english = english;
         this.bangla = bangla;
+        this.viewSts=viewStd;
 
     }
 
@@ -46,7 +48,7 @@ private TextToSpeech textoSpeech;
         TextView text2 = (TextView) itemView.findViewById(R.id.banglaid);
         Button btn = (Button) itemView.findViewById(R.id.volume);
         Button shareBtn = (Button) itemView.findViewById(R.id.share);
-        Button love = (Button) itemView.findViewById(R.id.love);
+        final Button love = (Button) itemView.findViewById(R.id.love);
         text2.setText(english[position]);
         text1.setText(bangla[position]);
         textoSpeech=new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
@@ -78,6 +80,15 @@ private TextToSpeech textoSpeech;
         love.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(viewSts[position].equals("1")) {
+                    love.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.favorite_yellow));
+                }
+                else if(viewSts[position].equals("0")){
+                    love.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
+                }
+                else {
+                    love.setBackgroundDrawable(getContext().getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
+                }
                 DataTemp dt = new DataTemp(english[position],bangla[position]);
 
                 DatabaseFunction df = new DatabaseFunction(getContext());
