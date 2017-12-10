@@ -22,16 +22,20 @@ import java.util.Locale;
  */
 
 public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
-    ArrayList<Product> products;
 
+
+    ArrayList<Product> products;
+    private CustomFavoriteAdapter adapter;
     Context context;
     int resource;
     TextToSpeech textToSpeech;
+
     public CustomFavoriteAdapter(Context context, int resource, ArrayList<Product> products) {
         super(context, resource, products);
         this.products = products;
         this.context = context;
         this.resource = resource;
+        this.adapter=this;
     }
 
     @NonNull
@@ -54,6 +58,8 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
         Button love = (Button) convertView.findViewById(R.id.love);
         text2.setText(product.getEnglish());
         text1.setText(product.getBangla());
+
+
         textToSpeech=new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -89,6 +95,9 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
                 df.Delete_Raw(product.getBangla());
                 df.viewData();
                 Toast.makeText(getContext(),product.getBangla()+"\nDeleted",Toast.LENGTH_SHORT).show();
+
+                products.remove(product);
+                adapter.notifyDataSetChanged();
 
             }
         });

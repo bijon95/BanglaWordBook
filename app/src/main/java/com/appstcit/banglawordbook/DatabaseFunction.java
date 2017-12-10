@@ -27,7 +27,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
       String s = "CREATE TABLE "+TABLE_NAME+"( "+col_ID+" INTIGER PRIMARY KEY, "
-              + col_NAME+" TEXT, "+col_Phone+" TEXT)";
+              + col_NAME+" TEXT UNIQUE, "+col_Phone+" TEXT)";
         db.execSQL(s);
     }
 
@@ -59,7 +59,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
             SQLiteDatabase sq =this.getReadableDatabase();
             String q="SELECT * FROM "+TABLE_NAME;
             Cursor c= sq.rawQuery(q,null);
-            String[] bangla = new String[c.getCount()];
+
         String[] english = new String[c.getCount()];
             c.moveToFirst();
 
@@ -105,4 +105,6 @@ public class DatabaseFunction extends SQLiteOpenHelper {
         db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE "+col_NAME+"='"+name+"'");
         db.close();
     }
+
+
 }

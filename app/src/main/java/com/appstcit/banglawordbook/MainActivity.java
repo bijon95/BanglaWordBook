@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity
 
     LinearLayout btn1;
     String[] datalist ;
-    String[] viewSts={"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","0","1","0","1","0","1","0","1","0","1","0"};
+    String[] viewSts= new String[english.length];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,17 +41,22 @@ public class MainActivity extends AppCompatActivity
                 intent.putExtra("english",english);
                 intent.putExtra("bangla",bangla);
 
-/*
+                for (int i = 0 ; i<english.length;i++){
+                    viewSts[i]="0";
+                }
+
+
                 for(int i = 0; i<english.length;i++){
                      for(int j = 0; j<datalist.length;j++){
                          if(english[i].equals(datalist[j])){
-                             viewSts[i]=1;
+                             viewSts[i]="1";
+                             break;
                          }
-                         viewSts[i]=viewSts[i]+0;
+
                      }
 
                 }
-                */
+
                 intent.putExtra("viewStd",viewSts);
 
                 startActivity(intent);
