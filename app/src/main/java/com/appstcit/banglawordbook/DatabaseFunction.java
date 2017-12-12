@@ -16,8 +16,8 @@ public class DatabaseFunction extends SQLiteOpenHelper {
     private static final String TABLE_NAME = "mytab";
 
     private static final String col_ID = "id";
-    private static final String col_NAME = "name";
-    private static final String col_Phone = "phone";
+    private static final String col_Bangla = "bangla";
+    private static final String col_English = "english";
 
     public DatabaseFunction(Context c){
         super(c,DATABASE_NAME,null,1);
@@ -27,7 +27,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
       String s = "CREATE TABLE "+TABLE_NAME+"( "+col_ID+" INTIGER PRIMARY KEY, "
-              + col_NAME+" TEXT UNIQUE, "+col_Phone+" TEXT)";
+              + col_Bangla+" TEXT UNIQUE, "+col_English+" TEXT)";
         db.execSQL(s);
     }
 
@@ -40,8 +40,8 @@ public class DatabaseFunction extends SQLiteOpenHelper {
     SQLiteDatabase  sql = this.getWritableDatabase();
         ContentValues  cv = new ContentValues();
 
-        cv.put(col_NAME,dt.getName());
-        cv.put(col_Phone,dt.getPhone());
+        cv.put(col_English,dt.getName());
+        cv.put(col_Bangla,dt.getPhone());
 
        sql.insert(TABLE_NAME,null,cv);
         sql.close();
@@ -54,7 +54,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
 
 
 
-    public String[] viewData (){
+    public String[] viewDataEnglish (){
 
             SQLiteDatabase sq =this.getReadableDatabase();
             String q="SELECT * FROM "+TABLE_NAME;
@@ -66,7 +66,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
             if(c.moveToFirst()){
                 int count = 0;
                 do{
-                    english[count] = c.getString(c.getColumnIndex(col_NAME+""));
+                    english[count] = c.getString(c.getColumnIndex(col_English+""));
 
 
                     count=count+1;
@@ -88,7 +88,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
         if(c.moveToFirst()){
             int count = 0;
             do{
-                bangla[count] = c.getString(c.getColumnIndex(col_Phone+""));
+                bangla[count] = c.getString(c.getColumnIndex(col_Bangla+""));
 
 
                 count=count+1;
@@ -102,7 +102,7 @@ public class DatabaseFunction extends SQLiteOpenHelper {
     public void Delete_Raw(String name)
     {
         SQLiteDatabase db=this.getWritableDatabase();
-        db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE "+col_NAME+"='"+name+"'");
+        db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE "+col_Bangla+"='"+name+"'");
         db.close();
     }
 

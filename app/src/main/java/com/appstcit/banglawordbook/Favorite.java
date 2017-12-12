@@ -25,7 +25,7 @@ public class Favorite extends AppCompatActivity {
         arrayList = new ArrayList<>();
         DatabaseFunction df = new DatabaseFunction(Favorite.this);
         bangla = df.viewDataBangla();
-     english = df.viewData();
+     english = df.viewDataEnglish();
         for(int i = 0;i<english.length;i++){
             arrayList.add(new Product(english[i],bangla[i]));
         }
@@ -42,9 +42,9 @@ public class Favorite extends AppCompatActivity {
                 temp.clear();
                 for (int i = 0; i < arrayList.size(); i++)
                 {
-                    if (textlength <= arrayList.get(i).getBangla().length()) {
+                    if (textlength <= arrayList.get(i).getEnglish().length()) {
 
-                        if (editText.getText().toString().equalsIgnoreCase((String) arrayList.get(i).getBangla().subSequence(0,textlength))) {
+                        if (editText.getText().toString().equalsIgnoreCase((String) arrayList.get(i).getEnglish().subSequence(0,textlength))) {
                             temp.add(arrayList.get(i));
                         }
                     }

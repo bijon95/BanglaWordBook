@@ -72,9 +72,9 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = product.getBangla();
+                String toSpeak = product.getEnglish();
                 textToSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
-                Toast.makeText(getContext(),product.getBangla(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),product.getEnglish(),Toast.LENGTH_LONG).show();
             }
         });
         shareBtn.setOnClickListener(new View.OnClickListener() {
@@ -92,9 +92,9 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
             public void onClick(View v) {
 
                 DatabaseFunction df = new DatabaseFunction(getContext());
-                df.Delete_Raw(product.getBangla());
-                df.viewData();
-                Toast.makeText(getContext(),product.getBangla()+"\nDeleted",Toast.LENGTH_SHORT).show();
+                df.Delete_Raw(product.getEnglish());
+                df.viewDataEnglish();
+                Toast.makeText(getContext(),product.getEnglish()+"\nDeleted",Toast.LENGTH_SHORT).show();
 
                 products.remove(product);
                 adapter.notifyDataSetChanged();

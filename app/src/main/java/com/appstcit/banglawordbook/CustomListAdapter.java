@@ -104,7 +104,7 @@ private TextToSpeech textoSpeech;
             }
                 else if (product.getViewStatus().equals("1")){
                  product.setViewStatus("0");
-}
+            }
                 Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
 

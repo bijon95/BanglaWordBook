@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
-
+    String[] viewSts;
     String[] datalist ;
     ListView listView;
     ArrayList<Productitem> arrayList;
@@ -23,12 +23,12 @@ public class Main2Activity extends AppCompatActivity {
         arrayList = new ArrayList<>();
 
         DatabaseFunction df = new DatabaseFunction(Main2Activity.this);
-        datalist=df.viewData();
+        datalist=df.viewDataBangla();
 
         listView = (ListView) findViewById(R.id.listview);
         String[] english = getIntent().getStringArrayExtra("english");
         String[] bangla = getIntent().getStringArrayExtra("bangla");
-        String[] viewSts = new String[english.length];
+      viewSts = new String[english.length];
 
         for (int i = 0 ; i<english.length;i++){
             viewSts[i]="0";
