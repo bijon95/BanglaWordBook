@@ -57,12 +57,10 @@ private TextToSpeech textoSpeech;
 
 
         if(product.getViewStatus().equals("1")) {
-            love.setBackgroundResource(R.drawable.favorite_yellow);
+            love.setBackgroundResource(R.drawable.ic_favorite_black_24dp);
         }
         else if(product.getViewStatus().equals("0")){
-            love.setBackgroundResource(R.drawable.ic_favorite_black_24dp);  }
-        else {
-            love.setBackgroundResource(R.drawable.ic_favorite_black_24dp); }
+            love.setBackgroundResource(R.drawable.ic_favorite_border_black_24dp);  }
 
 
         text2.setText(product.getEnglish());
@@ -79,7 +77,7 @@ private TextToSpeech textoSpeech;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toSpeak = product.getEnglish();
+                String toSpeak = product.getBangla();
                 textoSpeech.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
@@ -88,7 +86,7 @@ private TextToSpeech textoSpeech;
             public void onClick(View v) {
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, product.getEnglish()+"-"+product.getBangla());
+                sendIntent.putExtra(Intent.EXTRA_TEXT, product.getBangla()+"-"+product.getEnglish());
                 sendIntent.setType("text/plain");
                 context.startActivity(sendIntent);
             }
@@ -107,6 +105,7 @@ private TextToSpeech textoSpeech;
                 else if (product.getViewStatus().equals("1")){
                  product.setViewStatus("0");
 }
+                Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
 
             }

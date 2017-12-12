@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity {
 
+    String[] datalist ;
     ListView listView;
     ArrayList<Productitem> arrayList;
     @Override
@@ -21,18 +22,37 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         arrayList = new ArrayList<>();
 
+        DatabaseFunction df = new DatabaseFunction(Main2Activity.this);
+        datalist=df.viewData();
 
         listView = (ListView) findViewById(R.id.listview);
         String[] english = getIntent().getStringArrayExtra("english");
         String[] bangla = getIntent().getStringArrayExtra("bangla");
-        String[] viewStd = getIntent().getStringArrayExtra("viewStd");
+        String[] viewSts = new String[english.length];
 
-        for(int i = 0;i<english.length;i++){
-            arrayList.add(new Productitem(english[i],bangla[i],viewStd[i]));
+        for (int i = 0 ; i<english.length;i++){
+            viewSts[i]="0";
         }
 
-        CustomListAdapter adapter = new CustomListAdapter(Main2Activity.this,R.layout.list_item,arrayList);
+
+        for(int i = 0; i<english.length;i++){
+            for(int j = 0; j<datalist.length;j++){
+                if(english[i].equals(datalist[j])){
+                    viewSts[i]="1";
+                    break;
+                }
+
+            }
+
+        }
+        for(int i = 0;i<english.length;i++){
+            arrayList.add(new Productitem(english[i],bangla[i],viewSts[i]));
+        }
+
+        final CustomListAdapter adapter = new CustomListAdapter(Main2Activity.this,R.layout.list_item,arrayList);
         listView.setAdapter(adapter);
+
+
 
     }
 }
