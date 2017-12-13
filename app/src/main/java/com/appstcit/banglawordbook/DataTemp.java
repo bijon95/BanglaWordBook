@@ -12,6 +12,7 @@ public class DataTemp {
     private String name;
     private String phone;
     private Context c;
+    private String dataTemp;
 
     public DataTemp(String name, String phone){
 
