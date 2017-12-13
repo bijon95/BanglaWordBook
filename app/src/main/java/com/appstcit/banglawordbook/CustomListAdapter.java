@@ -1,6 +1,7 @@
 package com.appstcit.banglawordbook;
 
 import android.app.Activity;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.speech.tts.TextToSpeech;
@@ -54,6 +55,7 @@ private TextToSpeech textoSpeech;
         Button btn = (Button) convertView.findViewById(R.id.volume);
         Button shareBtn = (Button) convertView.findViewById(R.id.share);
         Button love = (Button) convertView.findViewById(R.id.love);
+        Button copyBtn = (Button) convertView.findViewById(R.id.copy);
 
 
         if(product.getViewStatus().equals("1")) {
@@ -108,6 +110,14 @@ private TextToSpeech textoSpeech;
                 Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
 
+            }
+        });
+
+        copyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager _clipboard = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+                _clipboard.setText(product.getBangla()+"-"+product.getEnglish());
             }
         });
 
