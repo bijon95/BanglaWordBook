@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     String[] english={"Admission","Answer","Atlas","Bell","Bench","Blackboard","Book","Chair","Chancellor","college","Demonstrator","Examination","Exercise book","Fee","Fine","Fountain pen","Globe","Gymnasium","Hall","Headmaster","Hostel","Ink","Leave","Lesson","Library","Map","Medal","Nib","Paper","Pen","Pencil","Playground","Poem","Poetry","Principal","Prize","Professor","Prose","Pupil","Question","Recess","Result","School","Slate","Student","Subject","Table","Transfer","Tution","Tutor","University","Vacation","Vice-chancellor"};
     String[] bangla={"প্রবেশাধিকার","উত্তর,জবাব","মানচিত্রাবলী","ঘণ্টাধ্বনি","কাঠের বা পাথরের তৈরি লম্বা আসন,বিচারকের আসন","বিদ্যালয়ে লিপির জন্য তক্তা","বই","কেদারা,সভাপতির পদ","আচার্য","কলেজ,মহাবিদ্যালয়","সক্রিয় অংশগ্রহণকারী,প্রদর্শনকারী","পরীক্ষা,অনুসন্ধান","অনুশীলনের বই","পারিশ্রমিক","জরিমানা","ঝর্ণা কলম","পৃথিবী","ব্যায়ামাগার","ছাত্রাবাস","বিদ্যালয়ের প্রধানশিক্ষক","ছাত্রাবাস","কালি","ত্যাগ","পাঠ","গ্রন্থাগার","মানচিত্র","পদক","কলমের নিব","কাগজ","লেখনী","পেন্সিল","খেলার মাঠ","কবিতা","কবিতা","অধ্যক্ষ","পুরস্কার","অধ্যাপক","গদ্য","চক্ষুর তারা","প্রশ্ন","ছুটি","ফল","বিদ্যালয়","সিলিট্-পাথর","শিক্ষার্থী","বিষয়","ডেস্ক,সারণী","হস্তান্তর","শিক্ষাদান","গৃহশিক্ষক","বিশ্ববিদ্যালয়","অবকাশ","উপাচার্য"};
+String[] edu;
+    String [] food;
 
     LinearLayout btn1;
 
