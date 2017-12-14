@@ -9,135 +9,3414 @@
     tools:context="com.appstcit.banglawordbook.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-
-    <LinearLayout
-
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#d4d4d0"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
-
-
+        android:layout_height="match_parent">
         <LinearLayout
-            android:id="@+id/btn1"
+
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="140dp">
+            android:layout_height="match_parent"
+            android:background="#d4d4d0"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
 
             <LinearLayout
-                android:padding="5dp"
-                android:background="#ffffff"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
+                android:id="@+id/education"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                android:layout_height="match_parent">
+                android:layout_height="140dp">
 
-                <ImageView
-                    android:layout_weight="2.5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/education"
-                    android:id="@+id/imageView2" />
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="শিক্ষা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
                     android:layout_height="match_parent">
 
 
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="Education"
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
                         />
 
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
 
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="শিক্ষা"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="খাদ্য"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
 
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="54"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
+
+
             </LinearLayout>
 
 
-        </LinearLayout>
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="140dp">
 
             <LinearLayout
-                android:padding="5dp"
-                android:background="#ffffff"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
+                android:id="@+id/vegetable"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                android:layout_height="match_parent">
+                android:layout_height="140dp">
 
-
-                <ImageView
-                    android:layout_weight="2.5"
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/food"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Vegetable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="শাক্সবজি"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fish"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Fish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="মাছ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/corn"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Corns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="শস্যকণা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/math"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Mathematics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="গণিত শাস্ত্র"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shape"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Shape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="আকৃতি"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fruits"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Fruits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ফল"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/spices"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"></ImageView>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Spices"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="মসলা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/geography"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Geography"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ভূগোল"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/weather"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Weather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="আবহাওয়া"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/science"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Science"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বিজ্ঞান"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                       />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="State and Government"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="রাষ্ট ও সরকার "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/law"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Law and court"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="আইন এবং আদালত"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/measurement"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Measurement and Weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পরিমাপ এবং ওজন"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/postal"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Postal Terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পোস্টাল শর্তাবলী"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/trade"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Trade and commerce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ব্যবসায়-বানিজ্য"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Day,Month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="দিন,মাস"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/medicine"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                       />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Medicine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ঔষধ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/global"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Global Politics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বিশ্বব্যাপী রাজনীতি"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/war"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                       />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="War and weapons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="যুদ্ধ ও অস্ত্র"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/men"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Men and Women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পুরুষ এবং মহিলা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/limbs"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                      />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Limbs of Man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="মানুষের অঙ্গ-প্রত্যঙ্গ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="89"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nation"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Nation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="জাতি"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stateofman"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                      />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="State of Man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ম্যান রাজ্য"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Religion"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Religion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ধর্ম"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/relatives"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Relatives"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="আত্মীয়-স্বজন"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/people"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="People"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="জনসাধারণ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/diseases"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Diseases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="রোগ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bird"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Bird"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পাখি"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/wormandinsect"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Worm and Insect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পোকা ও পতঙ্গ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/reptiles"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Reptiles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="সরীসৃপ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/animal"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                         />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Animals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="প্রাণী"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/limbsofAnimals"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Limbs of Animals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="প্রাণী অঙ্গ-প্রত্যঙ্গ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/criesofanimal"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                       />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Cries of Animals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="প্রাণীর ডাক"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cultivation"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Cultivation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="কৃ্ষিকার্য"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/naturalobject"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
                     />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Natural Object"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="প্রাকৃ্তিক বস্তু"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/flower"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
                     android:layout_height="match_parent">
 
 
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="Food"
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        />
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="খাদ্য"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
                         />
 
-                    <TextView
-                        android:textSize="@dimen/textSize"
-                        android:text="46"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Flower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ফুল"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/treesandplants"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Tree and Plants"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="গাছপালা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/clothes"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Clothes and Garments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="জামাকাপড় ও গার্মেন্টস"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/household"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                         />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Household Articles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="গৃহস্থালী প্রবন্ধ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dwellings"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Dwellings House"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বসবাসকারীদের হাউস"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gameandsports"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Game and Sports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="খেলা ও ক্রীয়া"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/metals"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Metals and Minerals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="ধাতু ও খনিজ পদার্থ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/colours"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                       />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Colours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="রং"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ornaments"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Ornaments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="অলঙ্কার"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/musicalinstrument"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Musical Istrument"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বাদ্যযন্ত্র"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vehicle"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বাহন"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/branches"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                         />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Branches of Education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="শিক্ষা শাখা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/direction"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Direction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="গতিপথ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/daymonth"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                     />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Day, Month and Season "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="দিন, মাস এবং মৌসুম"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/feelings"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Feelings and Affect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="অনুভূতি এবং স্নেহ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/administrator"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                         />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Administrator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="প্রশাসক"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/commerce"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Commerce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="বানিজ্য"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/marine"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                         />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Marine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="সামুদ্রিক"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="253"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/physics"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Physics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="পদার্থবিদ্যা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="260"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/chemistry"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Chemistry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="রসায়ন"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="167"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/biology"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Biology"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="জীববিদ্যা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="249"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/astronomy"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/education"
+                        android:id="@+id/imageView2" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Astronomy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="জ্যোতির্বিদ্যা"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="293"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vitamins"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="140dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/food"
+                        />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="Vitamins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="খাদ্যপ্রাণ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:textSize="@dimen/textSize"
+                            android:text="90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
             </LinearLayout>
 
 
         </LinearLayout>
-
-
-
-
-    </LinearLayout>
-
+    </ScrollView>
 
 </RelativeLayout>

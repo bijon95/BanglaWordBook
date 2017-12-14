@@ -100,12 +100,15 @@ private TextToSpeech textoSpeech;
                 DataTemp dt = new DataTemp(product.getEnglish(),product.getBangla());
 
                 DatabaseFunction df = new DatabaseFunction(getContext());
-                df.AddDataToTable(dt);
+
             if(product.getViewStatus().equals("0")){
                 product.setViewStatus("1");
+                df.AddDataToTable(dt);
             }
                 else if (product.getViewStatus().equals("1")){
                  product.setViewStatus("0");
+                df.Delete_Raw(product.getBangla());
+
             }
                 Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
