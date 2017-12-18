@@ -82,7 +82,7 @@ public class CustomFavoriteAdapter  extends ArrayAdapter<Product> {
             public void onClick(View v) {
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, product.getBangla()+"-"+product.getEnglish());
+                sendIntent.putExtra(Intent.EXTRA_TEXT, product.getEnglish()+"-"+product.getBangla());
                 sendIntent.setType("text/plain");
                 context.startActivity(sendIntent);
             }

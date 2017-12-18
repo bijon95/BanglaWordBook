@@ -50,8 +50,8 @@ private TextToSpeech textoSpeech;
         }
         final Productitem product = getItem(position);
 
-        TextView text1 = (TextView) convertView.findViewById(R.id.englishid);
-        TextView text2 = (TextView) convertView.findViewById(R.id.banglaid);
+        TextView text2 = (TextView) convertView.findViewById(R.id.englishid);
+        TextView text1 = (TextView) convertView.findViewById(R.id.banglaid);
         Button btn = (Button) convertView.findViewById(R.id.volume);
         Button shareBtn = (Button) convertView.findViewById(R.id.share);
         Button love = (Button) convertView.findViewById(R.id.love);
@@ -104,13 +104,15 @@ private TextToSpeech textoSpeech;
             if(product.getViewStatus().equals("0")){
                 product.setViewStatus("1");
                 df.AddDataToTable(dt);
+                Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
             }
                 else if (product.getViewStatus().equals("1")){
                  product.setViewStatus("0");
                 df.Delete_Raw(product.getBangla());
+                Toast.makeText(getContext(),product.getBangla()+"\nDelete From Favorite",Toast.LENGTH_SHORT).show();
 
             }
-                Toast.makeText(getContext(),product.getBangla()+"\nAdded To Favorite",Toast.LENGTH_SHORT).show();
+
                 adapter.notifyDataSetChanged();
 
             }
@@ -121,6 +123,7 @@ private TextToSpeech textoSpeech;
             public void onClick(View v) {
                 ClipboardManager _clipboard = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
                 _clipboard.setText(product.getBangla()+"-"+product.getEnglish());
+                Toast.makeText(getContext(),"Copied",Toast.LENGTH_SHORT).show();
             }
         });
 
