@@ -677,9 +677,44 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_fev) {
+            Intent i = new Intent(MainActivity.this,Favorite.class);
+            startActivity(i);
             return true;
         }
+        else if (id == R.id.action_share) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+            return true;
+        }
+        else if (id == R.id.action_rate) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+            return true;
+        }
+        else if (id == R.id.action_feedbacks) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+            return true;
+        }
+        else if (id == R.id.action_more) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+            return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -690,18 +725,44 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_favorite) {
             Intent i = new Intent(MainActivity.this,Favorite.class);
             startActivity(i);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_more) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_feedback) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_RateApp) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
         } else if (id == R.id.nav_share) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
 
         } else if (id == R.id.nav_send) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is App link");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
+
 
         }
 

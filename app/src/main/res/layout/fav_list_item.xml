@@ -31,27 +31,74 @@
         android:gravity="right"
         android:layout_height="wrap_content">
 
-        <Button
-            android:background="@drawable/ic_volume_up_black_24dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/volume"
-            />
-        <Button
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_share_black_24dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/share"
-            />
-        <Button
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_delete_black_24dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/love"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_favorite_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/love"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:background="@drawable/ic_volume_up_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/volume"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_share_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/share"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_content_copy_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/copy"
+                    />
+            </LinearLayout>
     </LinearLayout>
 
 
 </LinearLayout>
+
+    </LinearLayout>

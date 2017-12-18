@@ -22,6 +22,7 @@ public class Favorite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite);
   editText = (EditText) findViewById(R.id.editText);
+        setTitle("Favorite");
         arrayList = new ArrayList<>();
         DatabaseFunction df = new DatabaseFunction(Favorite.this);
         bangla = df.viewDataBangla();
