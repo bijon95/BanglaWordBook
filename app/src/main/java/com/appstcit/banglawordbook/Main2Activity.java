@@ -9,17 +9,30 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.ArrayList;
+
+
 
 public class Main2Activity extends AppCompatActivity {
     String[] viewSts;
     String[] datalist ;
     ListView listView;
     ArrayList<Productitem> arrayList;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+
+
+
         setTitle(getIntent().getStringExtra("titlebar"));
         arrayList = new ArrayList<>();
 
@@ -56,4 +69,5 @@ public class Main2Activity extends AppCompatActivity {
 
 
     }
+
 }
