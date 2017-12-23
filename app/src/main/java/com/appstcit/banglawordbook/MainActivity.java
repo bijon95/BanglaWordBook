@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -219,7 +220,13 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
         mAdView.loadAd(adRequest);
 
 
-        // Prepare the Interstitial Ad
+        interstitial = new InterstitialAd(MainActivity.this);
+        // Insert the Ad Unit ID
+        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
+
+
+        // Prepare an Interstitial Ad Listener
+
 
 
 
@@ -298,6 +305,7 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
             @Override
             public void onClick(View v) {
                 openListView(Cornsenglish,Cornsbangla,"Corns");
+                viewAdd(addCount);
             }
         });
 
@@ -305,6 +313,7 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
             @Override
             public void onClick(View v) {
                 openListView(mathenglish,mathbangla,"Mathematics");
+                viewAdd(addCount);
             }
         });
 
@@ -312,6 +321,7 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
             @Override
             public void onClick(View v) {
                 openListView(shapeenglish,shaprebangla,"Shape");
+                viewAdd(addCount);
             }
         });
 
@@ -567,147 +577,158 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
         householdart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openListView(householdEnglish,houseHoldBangla,"Household_Articles");viewAdd(addCount);
+                openListView(householdEnglish,houseHoldBangla,"Household_Articles");
+                viewAdd(addCount);
 
             }
         });
         dwellinghouse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(dwellingHouseEnglish,dwellingsHouseBangla,"Dwellings_House");
+                viewAdd(addCount);
             }
         });  game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(gameAndSportsEnglish,gameAndSportsBangla,"Game_and_Sports");
+                viewAdd(addCount);
             }
         });  metalsandminerals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(metalsAndMineralsEnglish,metalsAndMineralsBangla,"Metals_and_Minerals ");
+                viewAdd(addCount);
             }
         });
         color.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(colorEnglish,colorBangla,"Metals_and_Minerals");
+                viewAdd(addCount);
             }
         });
         ornaments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(ornamentsEnglish,ornamentsBAngla,"Colors");
+                viewAdd(addCount);
             }
         });
         musical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(musicalInstrumentEnglish,musicalInstruMentBangla,"Ornaments");
+                viewAdd(addCount);
             }
         });
         metalsandminerals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(metalsAndMineralsEnglish,metalsAndMineralsBangla,"Musical Intrument");
+                viewAdd(addCount);
             }
         });
         vehicle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(vicalesEnglish,vicalesBangla,"Vehicle");
+                viewAdd(addCount);
             }
         });
         branchesofedu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(branchOfEduEnglish,branchOfEducationBangla,"Branches of Education");
+                viewAdd(addCount);
             }
         });
         direction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
                 openListView(directonEnglish,directionBangla,"Direction");
+                viewAdd(addCount);
             }
         });
         daymonthseason.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
-
                 openListView(dayMonthSeasonEnglish,dayMonthSeasonBangla,"Day,Month and Season");
+                viewAdd(addCount);
             }
         });
         feeling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(feelingEnglish,feelingBangla,"Feelings and  Affection");
+                viewAdd(addCount);
             }
         });
         administration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(administratorEnglish,administratorBangla,"Administrator");
+                viewAdd(addCount);
             }
         });
         commerce.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(commerceEnglish,commerceBangla,"Commerce");
+                viewAdd(addCount);
             }
         });
         marine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(marinEnglish,marinBangla,"Marine");
+                viewAdd(addCount);
             }
         });
         physics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(physicEnglish,physicBangla,"Physics");
+                viewAdd(addCount);
             }
         });
         chemistry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(cHEMISTRYEnglish,cHEMISTRYBangla,"CHEMISTRY");
+                viewAdd(addCount);
             }
         });
         biology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(biologyEnglish,biologyBangla,"Biology");
+                viewAdd(addCount);
             }
         });
         astronomy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(astronomyEnglish,astronomyBangla,"Astronomy ");
+                viewAdd(addCount);
             }
         });
         vitamins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewAdd(addCount);
+
                 openListView(vitaminsEnglish,vitaminsBangla,"Vitamins" );
+                viewAdd(addCount);
             }
         });
 
@@ -858,31 +879,31 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
         startActivity(intent);
     }
 
+
+
+    public void viewAdd(int addcount){
+        interstitial.loadAd(adRequest);
+        interstitial.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                // Call displayInterstitial() function
+                if(addCount%3 == 0) {
+                    displayInterstitial();
+                }
+
+            }
+        });
+
+        if (addcount%3 == 0) {
+            displayInterstitial();
+            addCount=0;
+    }
+    addCount++;
+        Toast.makeText(MainActivity.this,addcount+"",Toast.LENGTH_LONG).show();
+    }
     public void displayInterstitial() {
 // If Ads are loaded, show Interstitial else show nothing.
         if (interstitial.isLoaded()) {
             interstitial.show();
         }
-    }
-
-    public void viewAdd(int addcount){
-
-        if (addcount%3 == 0) {
-
-
-            interstitial = new InterstitialAd(MainActivity.this);
-// Insert the Ad Unit ID
-            interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
-
-            interstitial.loadAd(adRequest);
-// Prepare an Interstitial Ad Listener
-            interstitial.setAdListener(new AdListener() {
-                public void onAdLoaded() {
-                    // Call displayInterstitial() function
-                    displayInterstitial();
-                }
-            });
-        }
-        addCount++;
     }
 }
