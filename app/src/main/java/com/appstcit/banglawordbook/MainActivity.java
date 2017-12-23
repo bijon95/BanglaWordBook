@@ -219,7 +219,6 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
          adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-
         interstitial = new InterstitialAd(MainActivity.this);
         // Insert the Ad Unit ID
         interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
