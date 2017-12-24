@@ -203,6 +203,16 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
             "Deprivation", "Diet", "Dietary", "Disease", "Doctor", "Dosage", "Dose", "Energy", "Essential", "Eyesight", "Facilitate", "Follow", "Food", "Fruit", "Fuel", "Function", "Growth", "Healing", "Health", "Hyginene", "Ingest", "Jar", "Junk", "Level", "Liquid", "Liver", "Maintain",
             "Metabolic", "Mineral", "Natural", "Nervous System", "Nutrition", "Organic", "Pill", "Powder", "Program", "Promote", "Protection", "Purpose", "Quantity", "Reaction", "Recommended", "Regimen", "Replenish", "Requirement", "Response", "Role", "Skin", "Source", "Stored", "Study", "Stustance", "Supplement", "Swallow", "Synthesis", "Tablet", "Take", "Time", "Tolerate", "Unused", "Value", "Variety", "Vrgetables", "Vitamin", "Weight", "Well being", "Wellness", "Youth"};
 
+    String[] englishFood ={"Barley","Beef","Biscuit","Bread","Butter","Cake","Cheese","Chicken","Coffee","Cream","Curd","Curry","Drink","Egg","Fat","Fish","Flesh","Food","Fry","Ghee","Honey","Jam","Jelly","Loaf","Meat","Milk","Molasses","Mutton","Oil","Omlete","Patty","Pie","Pouch","Pulse","Rice","Roll","Salt","Soup","Sugar","Sweet","Sweetmeat","Tea","Water","Whey","Wine","Yolk"};
+            String[] banglaFood ={"যব","গোমাংশ","বিস্কুট","রুটি","মাখন","পিঠা","পনির","পটুতা","কফি","ননী","দই","ঝোল","পান করা","ডিম","মোটা","মাছ","প্রাণিদেহেরমাংস","খাদ্যদ্রব্য","ভাজামাছ","ঘি","মধু","ফলেরআচার","ফলেরমোরব্বা","পাউরুটি","মাংস","দুধ","গুড়","খাসীরমাংস","তেল","অমলেট","পিঠা","পিঠে","ছোটথলিবাপকেট","কলাইডাল","চাল","গুটান","নুন","ঝোল","চিনি","মিষ্টি","মেঠাই","চা","জল","ছানার জল","মদ","ডিম্বেরপীতাংশ" };
+
+
+    String[] englishVegetables= {"Arum","Balsamapple","Basil","Bean","Bindweed","Brinjal","cabbage","Carrot","Cauliflower","Cucumber","Greens","Lady's finger","Pea","Potato","Pumkin","Radish","Snakegourd","Sweetpatato","Tomato","Turnip","Vegetables"};
+    String[] banglaVegetables= {"কচু","করলা","তুলসীগাছ","শিম","বিভিন্ন জাতির লতনে গাছ","বেগুন","বাঁধাকপি","গাজর","ফুলকপি","শসা","সবুজশাকসবজি","ঢেঁড়স","মটর","আলু","বড় কুমড়া","মুলা","চিচিঙ্গা","মিষ্টিআলু","টমেটো","শালগম","শাকসবজি" };
+
+    String[] englishfish= {"Breeding fish","Butterfish","Carp","Climbingfish","Codfish","Crab","Dryfish","Eelfish","Fin","Flat bodiedfish","Flatfish","Fry","Gall","Gill","Hilsafish","Lobster","Mackerel","Malletfish","Mangofish","Mullet","Pomfret","Prawn","Roe","Salmon","Saltedfish","Scale","Scorpionfish","Sheatfish","Shoal","Shrimp","Smallfry","Trout","Trout carp","Vetki","Walking fish","Whale"};
+    String[] banglaFish= {"প্রজননমাছ","পাবদামাছ","রুই-কাতলাজাতীয়মাছ","কৈমাছ","কডমাছ","কাঁকড়া","শুঁটকি","পাঁকালমাছ","পাখনা","চিতল","চিতল","ছোটমাছ","পিত্ত","পরিমানবিশেষ","ইলিশমাছ","গলদাচিংড়ি","সামুদ্রিকমৎস্যবিশেষ","সামুদ্রিকমৎস্যবিশেষমাছ","তপসেমাছ","সামুদ্রিকমৎস্যবিশেষ","সামুদ্রিকমৎস্যবিশেষ","চিংড়িমাছ","মাছেরডিম","মৎস্যবিশেষ","লবণাক্তমাছ","মাপনী","ফিশ-শিঙি","মাছবিশেষ","ঝাঁক","বাগদাচিংড়ি","কমভাজা","পোনাজাতীয়মাছ","স্যামনপরিবারেরস্বাদুপানিরমাছ","শাখা","শালমাছ","তিমি"};
+
 
     LinearLayout education,food,vegetable,fish,corns,mathematics,shape,fruits,spices,geography, weather, scienceBtn, stateandgovt, lawandcourt, measurement, postal,tread,daymonth,medicine,
             globalpolitics,warandweapons,menandwomen,limbs,nation,stateofman,religion,relatives,people,birds,wormandinsect,diseases,reptiles,
@@ -299,7 +309,24 @@ String[] vitaminsBangla={ "অভাব", "শোষন", "মোট পরি�
                 viewAdd(addCount);
             }
         });
-
+food.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        openListView(englishFood,banglaFood,"Food");
+    }
+});
+        fish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListView(englishfish,banglaFish,"Fish");
+            }
+        });
+        vegetable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListView(englishVegetables,banglaVegetables,"Vegetable");
+            }
+        });
         corns.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
