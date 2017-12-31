@@ -924,7 +924,7 @@ food.setOnClickListener(new View.OnClickListener() {
             addCount=0;
     }
     addCount++;
-        Toast.makeText(MainActivity.this,addcount+"",Toast.LENGTH_LONG).show();
+
     }
     public void displayInterstitial() {
 // If Ads are loaded, show Interstitial else show nothing.
